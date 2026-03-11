@@ -58,7 +58,7 @@ def listar_restaurantes():
     for restaurante in restaurantes:
         nome_restaurante = restaurante ['nome']
         categoria = restaurante ['categoria']
-        ativo = 'ativo' if restaurante ['ativo'] else 'desativado'
+        ativo = 'ativo' if restaurante ['ativo'] else 'inativo'
         print(f'- {nome_restaurante.ljust(20)} | {categoria.ljust(20)} | {ativo}')
     voltar_ao_menu_principal()
         
